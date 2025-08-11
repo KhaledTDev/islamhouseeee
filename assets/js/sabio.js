@@ -133,12 +133,12 @@ async function loadSabioInfo(sabioName) {
       name: sabioName,
       image: null,
       stats: {
-        total_audio: 6,
-        total_pdf: 2,
+        total_audio: 38,
+        total_pdf: 5,
         categories: {
-          duruz: 3,
-          firak: 2,
-          pdf: 1
+          duruz: 30,
+          firak: 8,
+          pdf: 5
         }
       }
     };
