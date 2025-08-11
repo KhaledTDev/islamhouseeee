@@ -683,11 +683,17 @@ function renderSabioContent() {
   if (SabioPageState.activeCategory) {
     const activeBtn = document.querySelector(`[data-category="${SabioPageState.activeCategory}"]`);
     if (activeBtn) {
-      activeBtn.classList.add('active');
+      activeBtn.classList.add('btn-primary');
+      activeBtn.classList.remove('btn-outline');
     }
   }
   
   console.log('Sabio content rendered with absolute priority');
+  
+  // IMPORTANTE: Configurar event listeners DESPUÉS de renderizar
+  setTimeout(() => {
+    setupCategoryEventListeners();
+  }, 100); // Breve delay para asegurar que el DOM se haya actualizado
 }
 
 // ...
