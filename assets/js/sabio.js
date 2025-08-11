@@ -815,8 +815,12 @@ function setupCategoryEventListeners() {
     const category = button.dataset.category;
     console.log(`🔘 Setting up listener for button ${index + 1}: "${category}"`);
     
-    // Agregar nuevo listener (sin remover previos ya que son nuevos botones)
-    button.addEventListener('click', async function(e) {
+    // Remover listeners previos para evitar duplicados
+    const newButton = button.cloneNode(true);
+    button.parentNode.replaceChild(newButton, button);
+    
+    // Agregar nuevo listener
+    newButton.addEventListener('click', async function(e) {
       e.preventDefault();
       e.stopPropagation();
       e.stopImmediatePropagation(); // IMPORTANTE: Prevenir otros event listeners
@@ -824,10 +828,17 @@ function setupCategoryEventListeners() {
       console.log(`💆 Category button clicked: "${category}"`);
       console.log('🚫 Preventing app.js event listeners from firing');
       
+      // Actualizar botones visualmente inmediatamente
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.remove('btn-primary');
+        btn.classList.add('btn-outline');
+      });
+      newButton.classList.remove('btn-outline');
+      newButton.classList.add('btn-primary');
+      
       try {
         console.log(`🚀 About to call SABIO loadCategoryContent("${category}")`);
         // Llamar EXPLÍCITAMENTE a la función de sabio.js (NO la de app.js)
-        // Usar 'this' o referencia directa para evitar conflicto con app.js
         await sabioLoadCategoryContent(category);
         console.log(`✅ SABIO loadCategoryContent("${category}") called successfully`);
       } catch (error) {
@@ -841,6 +852,8 @@ function setupCategoryEventListeners() {
   
   if (categoryButtons.length === 0) {
     console.warn('⚠️ No category buttons found! Buttons may not be rendered yet.');
+    // Intentar nuevamente después de un breve retraso
+    setTimeout(setupCategoryEventListeners, 500);
   } else {
     console.log(`✅ Successfully set up ${categoryButtons.length} category event listeners`);
   }
