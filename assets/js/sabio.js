@@ -630,9 +630,6 @@ async function initializeSabioPage() {
   // Configurar protección del DOM
   setupDOMProtection();
   
-  // IMPORTANTE: Configurar event listeners DESPUÉS de renderizar
-  setupCategoryEventListeners();
-  
   // Cargar automáticamente la categoría "all" por defecto
   console.log('🚀 Auto-loading default category: "all"');
   sabioLoadCategoryContent('all');
