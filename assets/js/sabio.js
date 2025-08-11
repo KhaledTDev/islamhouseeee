@@ -182,14 +182,51 @@ async function loadSabioContent(sabioName, category) {
       duruz: [
         { name: 'درس في التوحيد الأول', filename: 'lesson1.mp3', path: '#', size: 5000000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
         { name: 'درس في التوحيد الثاني', filename: 'lesson2.mp3', path: '#', size: 6000000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
-        { name: 'درس في الصلاة', filename: 'lesson3.mp3', path: '#', size: 4500000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' }
+        { name: 'درس في الصلاة', filename: 'lesson3.mp3', path: '#', size: 4500000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الزكاة الأول', filename: 'lesson4.mp3', path: '#', size: 5500000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الزكاة الثاني', filename: 'lesson5.mp3', path: '#', size: 6200000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الصيام الأول', filename: 'lesson6.mp3', path: '#', size: 4800000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الصيام الثاني', filename: 'lesson7.mp3', path: '#', size: 5200000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الحج الأول', filename: 'lesson8.mp3', path: '#', size: 6800000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الحج الثاني', filename: 'lesson9.mp3', path: '#', size: 5900000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الحج الثالث', filename: 'lesson10.mp3', path: '#', size: 6100000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الطهارة الأول', filename: 'lesson11.mp3', path: '#', size: 4700000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الطهارة الثاني', filename: 'lesson12.mp3', path: '#', size: 5300000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الطهارة الثالث', filename: 'lesson13.mp3', path: '#', size: 5800000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الوضوء الأول', filename: 'lesson14.mp3', path: '#', size: 4400000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الوضوء الثاني', filename: 'lesson15.mp3', path: '#', size: 4900000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الغسل الأول', filename: 'lesson16.mp3', path: '#', size: 5600000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الغسل الثاني', filename: 'lesson17.mp3', path: '#', size: 5100000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في التيمم', filename: 'lesson18.mp3', path: '#', size: 4600000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في أحكام المياه', filename: 'lesson19.mp3', path: '#', size: 5400000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في النجاسات', filename: 'lesson20.mp3', path: '#', size: 4300000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في أوقات الصلاة', filename: 'lesson21.mp3', path: '#', size: 5700000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في القبلة', filename: 'lesson22.mp3', path: '#', size: 4200000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الأذان', filename: 'lesson23.mp3', path: '#', size: 4800000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في الإقامة', filename: 'lesson24.mp3', path: '#', size: 3900000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في شروط الصلاة', filename: 'lesson25.mp3', path: '#', size: 6300000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في أركان الصلاة الأول', filename: 'lesson26.mp3', path: '#', size: 5500000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في أركان الصلاة الثاني', filename: 'lesson27.mp3', path: '#', size: 5800000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في واجبات الصلاة', filename: 'lesson28.mp3', path: '#', size: 5200000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في سنن الصلاة', filename: 'lesson29.mp3', path: '#', size: 4700000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' },
+        { name: 'درس في مكروهات الصلاة', filename: 'lesson30.mp3', path: '#', size: 4500000, extension: 'mp3', type: 'audio', categoryLabel: 'دروس' }
       ],
       firak: [
         { name: 'الرد على الخوارج الأول', filename: 'firak1.mp3', path: '#', size: 7000000, extension: 'mp3', type: 'audio', categoryLabel: 'فرق' },
-        { name: 'الرد على المعتزلة', filename: 'firak2.mp3', path: '#', size: 5500000, extension: 'mp3', type: 'audio', categoryLabel: 'فرق' }
+        { name: 'الرد على المعتزلة', filename: 'firak2.mp3', path: '#', size: 5500000, extension: 'mp3', type: 'audio', categoryLabel: 'فرق' },
+        { name: 'الرد على الأشاعرة الأول', filename: 'firak3.mp3', path: '#', size: 6800000, extension: 'mp3', type: 'audio', categoryLabel: 'فرق' },
+        { name: 'الرد على الأشاعرة الثاني', filename: 'firak4.mp3', path: '#', size: 6200000, extension: 'mp3', type: 'audio', categoryLabel: 'فرق' },
+        { name: 'الرد على الماتريدية', filename: 'firak5.mp3', path: '#', size: 5900000, extension: 'mp3', type: 'audio', categoryLabel: 'فرق' },
+        { name: 'الرد على الجهمية', filename: 'firak6.mp3', path: '#', size: 6400000, extension: 'mp3', type: 'audio', categoryLabel: 'فرق' },
+        { name: 'الرد على القدرية', filename: 'firak7.mp3', path: '#', size: 5800000, extension: 'mp3', type: 'audio', categoryLabel: 'فرق' },
+        { name: 'الرد على المرجئة', filename: 'firak8.mp3', path: '#', size: 6100000, extension: 'mp3', type: 'audio', categoryLabel: 'فرق' }
       ],
       pdf: [
-        { name: 'كتاب التوحيد', filename: 'book1.pdf', path: '#', size: 2000000, extension: 'pdf', type: 'document', categoryLabel: 'كتاب' }
+        { name: 'كتاب التوحيد', filename: 'book1.pdf', path: '#', size: 2000000, extension: 'pdf', type: 'document', categoryLabel: 'كتاب' },
+        { name: 'كتاب كشف الشبهات', filename: 'book2.pdf', path: '#', size: 1800000, extension: 'pdf', type: 'document', categoryLabel: 'كتاب' },
+        { name: 'كتاب الأصول الثلاثة', filename: 'book3.pdf', path: '#', size: 1200000, extension: 'pdf', type: 'document', categoryLabel: 'كتاب' },
+        { name: 'كتاب القواعد الأربع', filename: 'book4.pdf', path: '#', size: 900000, extension: 'pdf', type: 'document', categoryLabel: 'كتاب' },
+        { name: 'كتاب العقيدة الواسطية', filename: 'book5.pdf', path: '#', size: 2200000, extension: 'pdf', type: 'document', categoryLabel: 'كتاب' }
       ]
     };
     
